@@ -1,0 +1,71 @@
+import { motion } from "framer-motion";
+import { MapPin, ArrowDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import heroImage from "@/assets/hero-feast.jpg";
+
+const HeroSection = () => {
+  return (
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img
+          src={heroImage}
+          alt="Traditional Telangana feast with authentic dishes"
+          className="w-full h-full object-cover"
+          width={1920}
+          height={1080}
+        />
+        <div className="absolute inset-0 bg-warm-overlay" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-4 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="max-w-3xl mx-auto"
+        >
+          <p className="text-accent font-body text-sm md:text-base uppercase tracking-[0.25em] mb-4 font-medium">
+            Authentic Telangana Cuisine in LB Nagar
+          </p>
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6">
+            Where Every Bite Tells a{" "}
+            <span className="italic text-accent">Story</span>
+          </h1>
+          <p className="text-primary-foreground/80 font-body text-lg md:text-xl max-w-xl mx-auto mb-8 leading-relaxed">
+            Savor the bold, rustic flavors of Telangana — from slow-cooked Naatu Kodi Pulusu to fiery mutton curries. Made the way your ammamma made them.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8 py-6 rounded-full font-semibold shadow-xl"
+            >
+              <MapPin className="w-5 h-5 mr-2" />
+              Visit Us Today
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-base px-8 py-6 rounded-full font-semibold backdrop-blur-sm"
+            >
+              Explore Our Menu
+            </Button>
+          </div>
+        </motion.div>
+
+        {/* Scroll indicator */}
+        <motion.div
+          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+        >
+          <ArrowDown className="w-6 h-6 text-primary-foreground/60" />
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
