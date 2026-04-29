@@ -13,7 +13,7 @@
 [![Watch the demo](docs/screenshots/hero.png)](docs/demo/telangana-ruchulu-demo.mp4)
 
 📁 **Local file:** `docs/demo/telangana-ruchulu-demo.mp4`
-🌐 **Live preview:** https://id-preview--4fe315e1-a1bb-4a7d-a350-4cfdc4364c85.lovable.app
+🌐 **Live preview:** https://telangana-ruchulu-restaurant-website.onrender.com
 
 ---
 
