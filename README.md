@@ -162,3 +162,7 @@ MIT — feel free to fork and adapt for your own local business.
 ---
 
 _Made with ❤️ and a lot of mirchi 🌶️_
+
+---
+
+AI-assisted React + Tailwind restaurant website with modern UI, animations, and conversion-focused design
