@@ -2,7 +2,7 @@
 
 > **Authentic Telangana flavors, served fresh in LB Nagar, Hyderabad.**
 >
-> A modern, conversion-focused single-page website built with React, Vite, Tailwind CSS, and Framer Motion — generated using AI-assisted prompts on [Lovable](https://lovable.dev).
+> A modern, conversion-focused single-page website built with React, Vite, Tailwind CSS, and Framer Motion — generated using AI-assisted prompts on Lovable.
 
 ---
 
@@ -77,7 +77,7 @@ The raw AI output is preserved in [`outputs/generated-content.md`](outputs/gener
 
 | Tool | Purpose |
 |---|---|
-| **[Lovable](https://lovable.dev)** | AI app builder — generated the full React site from prompts |
+| **Lovable** | AI app builder — generated the full React site from prompts |
 | **React 18 + Vite 5** | Frontend framework & build tool |
 | **TypeScript** | Type safety |
 | **Tailwind CSS v3** | Utility-first styling + design tokens |
